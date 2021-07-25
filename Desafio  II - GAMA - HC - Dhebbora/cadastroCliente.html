@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Cadastros</title>
+</head>
+
+<body>
+  <nav class="menu">
+    <ul class="menu_itens">
+      <li class="btn btn-primary menu_li"><a class="menu_link" href="cadastroCliente.html">Clientes</a></li>
+
+      <li class="btn btn-primary menu_li"><a class="menu_link" href="cadastroProdutos.html">Produtos</a></li>
+    </ul>
+  </nav>
+
+  <section class="sessao">
+    <div class="divi_sessao">
+      <div>
+        <h1 class="texto"> Cadastro de Clientes</h1>
+      </div>
+      <div>
+
+        <form class="form-group">
+          <label>Nome: </label>
+          <input id="inNome" class="form-control" name="name" type="text">
+          <br>
+          <label>Endereço: </label>
+          <input id="inAdress" class="form-control" name="adress" type="adress">
+          <br>
+          <label>Email: </label>
+          <input id="inEmail" class="form-control" name="Email" type="email">
+          <br>
+          <label>Telefone: </label>
+          <input id="inPhone" class="form-control" name="number" type="number">
+        </form>
+        <button name="botao" type="button" id="btnSetItem" class="btn btn-primary"
+          onclick="salvarDados()">Adicionar</button>
+      </div>
+
+
+      <div class=tabela>
+        <div>
+          <h2 class="texto"> Lista</h2>
+        </div>
+
+        <table class="table table-striped" id="divisao_tabela">
+            <tr>
+              <td><b>Nome do cliente</b></td>
+              <td>Endereço</td>
+              <td>Email</td>
+              <td>Telefone</td>
+              <td> X </td>
+            </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-txt">Desenvolvido e criado por <a class="link_dbr" href="https://github.com/Dhebbora"> Dhebbora</a>
+    </p>
+  </footer>
+
+
+  <script src="/jquery-3.6.0.min.js"></script>
+  <script src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+  <script src="/navbar-animation-fix.js"></script>
+  <script src="/index.js"></script>
+
+</body>
+
+</html>

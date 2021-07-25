@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Cadastros</title>
+</head>
+
+<body>
+  <nav class="menu">
+    <ul class="menu_itens">
+      <li class="btn btn-primary menu_li"><a class="menu_link" href="cadastroCliente.html">Clientes</a></li>
+
+      <li class="btn btn-primary menu_li"><a class="menu_link" href="cadastroProdutos.html">Produtos</a></li>
+    </ul>
+  </nav>
+
+  <section class="sessao">
+    <div class="divi_sessao">
+      <div>
+        <h1 class="texto"> Cadastro de Produtos</h1>
+      </div>
+      <div>
+
+        <form class="form-group">
+          <label>Nome do produto: </label>
+          <input id="inProduto" class="form-control" name="texto" type="text">
+          <br>
+          <label>Descrição do produto: </label>
+          <input id="inTipo" class="form-control" name="texto" type="text">
+          <br>
+
+          <div class="form-inline">
+            <br>
+            <div class="form-group">
+              <label >Valor R$: </label>
+              <br>
+              <input id="inValor" class="form-control caixa_txt" name="number" type="number">
+              <br>
+            </div>
+
+            <div class="form-group">
+              <label > Qtd Estoque: </label>
+              <br>
+              <input id="inQuantidade" class="form-control caixa_txt" name="number" type="number">
+            </div>
+          </div>
+
+        </form>
+        <button name="botao" type="button" id="btnSetItem" class="btn btn-primary"
+          onclick="salvarProdutos()">Adicionar</button>
+      </div>
+
+
+      <div class=tabela>
+        <div>
+          <br>
+          <h2 class="texto"> Lista de Produtos cadastrados</h2>
+        </div>
+
+        <table class="table table-striped" id="divisaoProduto_tabela">
+          <tr>
+            <td><b>Nome do produto</b></td>
+            <td>Descrição do produto</td>
+            <td>Valor R$:</td>
+            <td>Qtd Estoque</td>
+            <td> X </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-txt">Desenvolvido e criado por <a class="link_dbr" href="https://github.com/Dhebbora"> Dhebbora</a>
+    </p>
+  </footer>
+
+
+  <script src="/jquery-3.6.0.min.js"></script>
+  <script src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+  <script src="/navbar-animation-fix.js"></script>
+  <script src="/indexProduto.js"></script>
+
+</body>
+
+</html>

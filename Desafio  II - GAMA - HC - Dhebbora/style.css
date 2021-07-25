@@ -1,0 +1,71 @@
+body{
+  font-family: 'Raleway', sans-serif;
+  background-image: url("/assets/sapato.png");
+  background-color: rgb(232, 253, 253);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 30%;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 23px;
+  font-family: 'Raleway', sans-serif;
+}
+.menu_itens{
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+.menu_li{
+  font-size: 25px;
+  
+  list-style: none;
+  padding: 16px;
+  border-radius: 22px;
+}
+.menu_link{
+  color: aliceblue;
+  text-decoration: none;
+}
+.menu_link:hover{
+  text-decoration: none;
+  color: aliceblue;
+}
+.sessao{
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+}
+.divi_sessao{
+ width: 40%;
+ height: 45%;
+ padding: 46px;
+}
+.texto{
+  display: flex;
+  color: rgb(221, 10, 91);
+  justify-content: center;
+  align-items: center;
+  font-size: 33px;
+  font-weight: 600;
+  padding-bottom: 43px;
+}
+
+#divisao_tabela{
+  padding: 60%;
+}
+
+.caixa_txt{
+  width:100%;
+  padding: 0px 50px;
+}
+.footer-txt{
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+}
